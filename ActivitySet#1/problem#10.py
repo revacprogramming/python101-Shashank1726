@@ -1,4 +1,5 @@
 # Dictionaries
+filename="dataset/mbox-short.txt"
 
 def get_c(filename):
     c=0

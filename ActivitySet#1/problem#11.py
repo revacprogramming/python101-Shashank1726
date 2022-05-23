@@ -1,5 +1,5 @@
 # Tuples
-
+filename = "dataset/mbox-short.txt"
 d = dict()
 
 def getmail(filename):
@@ -8,7 +8,7 @@ def getmail(filename):
             word = lines.rstrip().split()
             if 'From' in word and'From:' not in word:
                 email = word[1]
-                d[email] = d.get(email, 0) + 1
+                d[email] = d.get(email, 0) + 1 
 
     cnt =0
     mail = None
