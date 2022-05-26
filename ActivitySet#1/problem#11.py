@@ -13,7 +13,7 @@ def getmail(filename):
     cnt =0
     mail = None
 
-    for email,count in d.items(): 
+    for email,count in d.items():  
         if count>cnt:
             cnt = count
             mail = email
