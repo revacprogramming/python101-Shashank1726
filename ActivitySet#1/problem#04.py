@@ -1,21 +1,21 @@
 # Conditional Execution
 
-score = input("Enter Score: ")
-s = float(score)
+def computation(h,r):
+	if h <= 40:
+	 	return h*r
+	elif h > 40:
+		return 40*r+(h-40)*1.5*r
 
-def grade(s):
-    if(s > 0 and s < 1):
-        if(s >= 0.9):
-            print("A")
-        elif(s >= 0.8):
-            print("B")
-        elif(s >= 0.7):
-            print("C")
-        elif(s >= 0.6):
-            print("D")
-        else:
-            print("F")
-    else:
-        print("Error. Enter a value between 0 and 1 only")
+		
+def output(wage):
+	print ("Earing",wage)
 
-grade(s)
+	
+def main():
+	hours=float(input("Enter Hours:"))
+	rate= float(input("Enter the Rate:"))
+	wage=computation(hours,rate)
+	output(wage)
+
+	
+main()	

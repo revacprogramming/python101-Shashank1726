@@ -1,10 +1,19 @@
 # Variables, Expressions & Statements
 
-def calc(hrs,rate):
-    return float(hrs) * float(rate)
+def Earning(hrs,rate):
+  wage = hrs*rate
+  return wage
 
+	
+def output(wage):
+	print("Earning",wage)
 
-hrs = input("Enter Hours:")
-rate = input("Enter rate:")
+	
+def main():
+	hrs=float(input("Enter hours:"))
+	rate=float(input("Enter rate:"))
+	wage=Earning(hrs,rate)
+	output(wage)
 
-print(f"Pay: {calc(hrs,rate)}")
+	
+main()	
