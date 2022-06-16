@@ -17,7 +17,7 @@ def output(count):
 
   def main():
     fhand=myinput()
-    count=counts(fhand)
+    count=counts(fhand) 
     output(count)
 
 main()
