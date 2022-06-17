@@ -1,4 +1,4 @@
-#Lists
+#Lists 
 def myinput():    
     fhand = open("dataset/mbox-short.txt")
     return fhand
